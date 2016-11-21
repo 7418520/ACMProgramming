@@ -17,14 +17,14 @@ http://acm.hdu.edu.cn/showproblem.php?pid=1060
 #include <iostream>
 #include <cmath>
 using namespace std;
-int main(){
-	int t,N;
-	double x=0.0;
-	cin>>t;
-	while(t--){
-		cin>>N;
-		x=fmod(N*log10((double)N),1.0);
-		cout<<(int)pow(10,x)<<endl;
-	}
-	return 0;
+int main() {
+  int t, N;
+  double x = 0.0;
+  cin >> t;
+  while (t--) {
+    cin >> N;
+    x = fmod(N * log10((double)N), 1.0);
+    cout << (int)pow(10, x) << endl;
+  }
+  return 0;
 }

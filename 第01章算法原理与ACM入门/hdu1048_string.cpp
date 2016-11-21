@@ -25,27 +25,27 @@ http://acm.hdu.edu.cn/showproblem.php?pid=1048
 #include <cstring>
 #include <cctype>
 using namespace std;
-int main(){
-	char a[1000],b[1000];
-	int i;
-	while(gets(a)){
-		if(strcmp(a,"START")==0)
-			memset(b,0,sizeof(b));
-		else if(strcmp(a,"END")==0)
-			cout<<b;
-		else if(strcmp(a,"ENDOFINPUT")==0)
-			break;
-		else{
-			for(i=0;a[i]!=0;i++){
-				if(isapha(a[i])){
-					if(a[i]+21>90)
-						b[i]=a[i]-5;
-					else
-						b[i]=a[i]+21;
-				}else
-					b[i]=a[i];
-			}
-		}
-	}
-	return 0;
+int main() {
+  char a[1000], b[1000];
+  int i;
+  while (gets(a)) {
+    if (strcmp(a, "START") == 0)
+      memset(b, 0, sizeof(b));
+    else if (strcmp(a, "END") == 0)
+      cout << b;
+    else if (strcmp(a, "ENDOFINPUT") == 0)
+      break;
+    else {
+      for (i = 0; a[i] != 0; i++) {
+        if (isapha(a[i])) {
+          if (a[i] + 21 > 90)
+            b[i] = a[i] - 5;
+          else
+            b[i] = a[i] + 21;
+        } else
+          b[i] = a[i];
+      }
+    }
+  }
+  return 0;
 }

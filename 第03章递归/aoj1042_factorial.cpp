@@ -15,14 +15,11 @@ Sample Output
 #include <cstdlib>
 #include <algorithm>
 using namespace std;
-int fact(int n){
-	return n==0?1:fact(n-1)*n;
-}
-int main(){
-	int n;
-	while(cin>>n)
-		cout<<fact(n)<<endl;
-	return 0;
+int fact(int n) { return n == 0 ? 1 : fact(n - 1) * n; }
+int main() {
+  int n;
+  while (cin >> n) cout << fact(n) << endl;
+        return 0;
 
 }
 

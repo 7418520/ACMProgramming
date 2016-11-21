@@ -15,19 +15,18 @@ Sample Output (one blank between case)
 
 http://acm.hdu.edu.cn/showproblem.php?pid=1096
 */
-int main(){
-	int cas,n,k;
-	cin>>cas;
-	for(i=0;i<cas;i++){
-		if(i)
-			cout<<endl;
-		int s=0;
-		cin>>n;
-		while(n--){
-			cin>>k;
-			s+=k;
-		}
-		cout<<k<<endl;
-	}
-	return 0;
+int main() {
+  int cas, n, k;
+  cin >> cas;
+  for (i = 0; i < cas; i++) {
+    if (i) cout << endl;
+    int s = 0;
+    cin >> n;
+    while (n--) {
+      cin >> k;
+      s += k;
+    }
+    cout << k << endl;
+  }
+  return 0;
 }

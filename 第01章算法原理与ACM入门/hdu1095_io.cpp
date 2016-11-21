@@ -11,10 +11,9 @@ Sample Output(one blank line follow case)
 
 http://acm.hdu.edu.cn/showproblem.php?pid=1095
 */
-int main(){
-	int a,b;
-	while(cin>>a>>b)
-		cout<<a+b<<endl<<endl;
-	
-	return 0;
+int main() {
+  int a, b;
+  while (cin >> a >> b) cout << a + b << endl << endl;
+
+  return 0;
 }
