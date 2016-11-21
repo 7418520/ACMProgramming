@@ -17,7 +17,7 @@ http://acm.nefu.edu.cn/JudgeOnline/problemShow.php?problem_id=564
 */
 #include <iostream>
 #include <cstdlib>
-#include <alogrithm>
+#include <algorithm>
 using namespace std;
 void move(int n,char a,char b,char c){
 	printf("number..%d..from..%c..to..%c\n",n,a,b);

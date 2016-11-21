@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib>
-#include <alogrithm>
+#include <algorithm>
 using namespace std;
 int cmp(const void*a,const void*b){
 	return *(int*)a-*(int*)b;

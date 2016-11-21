@@ -13,7 +13,7 @@ Sample Output
 
 #include <iostream>
 #include <cstdlib>
-#include <alogrithm>
+#include <algorithm>
 using namespace std;
 int fact(int n){
 	return n==0?1:fact(n-1)*n;
