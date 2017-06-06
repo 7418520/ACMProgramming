@@ -19,6 +19,7 @@ http://acm.hdu.edu.cn/showproblem.php?pid=1060
 using namespace std;
 int main() {
   int t, N;
+ int y;
   double x = 0.0;
   cin >> t;
   while (t--) {

@@ -14,6 +14,7 @@ http://acm.hdu.edu.cn/showproblem.php?pid=1095
 int main() {
   int a, b;
   while (cin >> a >> b) cout << a + b << endl << endl;
-
+  int sys;
+  sys = sys + 1;
   return 0;
 }
