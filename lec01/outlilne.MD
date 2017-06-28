@@ -21,7 +21,7 @@ public class A {
 	* String => java.lang.String
 	* System => java.lang.System
 	* 基本输出println //print (快捷键 sout+Tab)
-##.	计算模型JVM：
+##	计算模型JVM：
 ### Java Virtual Machine(基础数据类型，Primitive DateType)
 	* Byte/byte 1
 	* Boolean/boolean 1
@@ -38,7 +38,7 @@ public class A {
     * 所有数组类型
    
 	
-##.	输入输出(格式化输出)
+##	输入输出(格式化输出)
 	* 输出System.out.println/print/printf
 	* 原始System.in.read(char)
 	* 格式化输入：java.util.Scanner
