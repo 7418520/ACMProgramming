@@ -36,7 +36,21 @@ public class A {
     * BigInteger/BigDecimal
     * Date/DateTime/Calendar
     * 所有数组类型
-   
+### 方法参数传递机制： f(T t)
+    * 值传递 如果T是基础数据类型
+    * 引用传递 如果T是引用数据类型
+```$xslt
+public class DateTypeDemo {
+    public static void main(String[] args) {
+        int x = 3;
+        System.out.println(Integer.toBinaryString(x));
+        int y = Integer.parseInt("1234");
+        char c = 'x';
+        System.out.println(Character.isLetter(c));
+    }
+}
+
+```  
 	
 ##	输入输出(格式化输出)
 	* 输出System.out.println/print/printf
@@ -45,6 +59,35 @@ public class A {
 	    -- nextInt/nextByte/nextFLoat()/nextDouble()..
 	    -- next()/nextLine()...
 	    -- hashNext()/hasNextLine()/hasNextInt()...
+```$xslt
+import java.util.Arrays;
+import java.util.Scanner;
 
+/**
+ * Created by zj on 17-6-28.
+ * 1. Input(Scanner) & Output(String.format)
+ * 2. Math.sqrt()
+ */
+public class P1274 {
+    public static void main(String[] args) {
+        Scanner cin = new Scanner(System.in);
+
+        int a[] = new int[3];
+        a[0] = cin.nextInt();
+        a[1] = cin.nextInt();
+        a[2] = cin.nextInt();
+
+//        for (int i = 0; i < a.length; i++) {
+//            a[i]=cin.nextInt();
+//        }
+        Arrays.sort(a);
+        System.out.println(String.format("%d %d %d", a[0], a[1], a[2]));
+
+        cin.close();
+
+    }
+
+}
+```
 	
 	
