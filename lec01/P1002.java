@@ -22,7 +22,5 @@ public class P1002 {
         }
         System.out.println(String.format("%.2f %.2f", x1, x2));
         cin.close();
-
     }
-
 }
