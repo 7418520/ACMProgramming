@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 /**
  * Created by WebTuring on 2017-6-29.
+ * 数组模拟
  */
 public class A {
     public static void main(String[] args) {

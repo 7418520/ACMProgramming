@@ -1,6 +1,7 @@
 package contest01;
 
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.TreeSet;
 
@@ -20,10 +21,9 @@ public class F {
         cin.close();
     }
 
-    private static TreeSet<Character> foo(String s) {
-        TreeSet<Character> set = new TreeSet<Character>();
-        for (char c : s.toCharArray())
-            set.add(c);
+    private static TreeSet<String> foo(String s) {
+        TreeSet<String> set = new TreeSet<>();
+        set.addAll(Arrays.asList(s.split("")));
         return set;
     }
 
