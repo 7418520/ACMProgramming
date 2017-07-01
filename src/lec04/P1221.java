@@ -2,6 +2,10 @@ package lec04;
 
 import java.util.TreeMap;
 
+/**
+ * 单词统计
+ *
+ */
 public class P1221 {
 	public static void main(String[] args) {
 		String words[] = "   To know everything, is %^ to know nothing?   ".trim().toLowerCase().replaceAll("t","x").split("\\W+");
