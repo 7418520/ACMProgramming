@@ -1,4 +1,4 @@
-package c2;
+package contest02;
 
 import java.math.BigInteger;
 import java.util.Scanner;
