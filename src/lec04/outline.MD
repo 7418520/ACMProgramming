@@ -3,7 +3,7 @@
 - 括号匹配：[AOJ1853](!https://oj.ahstu.cc/JudgeOnline/problem.php?id=1583)
 - 24点求解与后缀式求值
 ## 链表的应用:
-- 解密QQ号 [AOJ1852](!https://oj.ahstu.cc/JudgeOnline/problem.php?id=1582)
+- 解密QQ号 [AOJ1582](!https://oj.ahstu.cc/JudgeOnline/problem.php?id=1582)
 
 # 集合框架II:关联容器Map
 ## 关联容器概述
