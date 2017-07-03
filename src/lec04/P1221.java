@@ -1,27 +1,28 @@
-package lec04;
+package lec04am;
 
+import java.util.Arrays;
 import java.util.TreeMap;
 
+/**
+ * Created by zj on 17-7-1.
+ */
 public class P1221 {
-	public static void main(String[] args) {
-		String words[] = "   To know everything, is %^ to know nothing?   ".trim().toLowerCase().replaceAll("t","x").split("\\W+");
-		int count=0;
-		TreeMap<String, Integer> map = new TreeMap<String, Integer>();
-		for (String word : words) {
-			if(word.isEmpty())
-				continue;
-			++count;
-			if (map.containsKey(word)) {
-				int freq = map.get(word);
-				map.put(word, freq + 1);
-			} else {
-				map.put(word, 1);
-			}
-
-		}
-		System.out.println(count);
-		for (String key : map.keySet()) {
-			System.out.println(key + ":" + map.get(key));
-		}
-	}
+    public static void main(String[] args) {
+        String[] words = "to know everything is to know nothing".split(" ");
+        System.out.println(Arrays.toString(words));
+        TreeMap<String, Integer> freq = new TreeMap<>();
+        for (String word : words) {
+            if (freq.containsKey(word)) {
+                int old = freq.get(word);
+                freq.put(word, old + 1);
+            } else {
+                freq.put(word, 1);
+            }
+        }
+        System.out.println(freq);
+        System.out.println(words.length);
+        for (String key : freq.keySet()) {
+            System.out.println(String.format("%s:%d", key, freq.get(key)));
+        }
+    }
 }
