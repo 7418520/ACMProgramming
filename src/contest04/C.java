@@ -18,14 +18,14 @@ public class C {
         int n = cin.nextInt();
         while (n-- > 0) {
             int a = cin.nextInt();
-            for (int i = 9; i >=1 ; i--) {
-                if(a>=b[i]){
-                    a-=b[i];
+            for (int i = 9; i >= 1; i--) {
+                if (a >= b[i]) {
+                    a -= b[i];
                 }
             }
-            if(a>0){
+            if (a > 0) {
                 System.out.println("No");
-            }else{
+            } else {
                 System.out.println("Yes");
             }
         }

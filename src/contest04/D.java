@@ -22,9 +22,9 @@ public class D {
 
     private static String remove(String n) {
         char a[] = n.toCharArray();
-        int index = a.length-1;
-        for ( int i = 0; i<a.length-1; i++) {
-            if  (a[i] > a[i + 1]) {
+        int index = a.length - 1;
+        for (int i = 0; i < a.length - 1; i++) {
+            if (a[i] > a[i + 1]) {
                 index = i;
                 break;
             }
