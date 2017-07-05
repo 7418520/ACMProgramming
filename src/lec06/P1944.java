@@ -28,6 +28,7 @@ public class P1944 {
             mp[i] = s.toCharArray();
         }
         int step = 0;
+        ans = Integer.MAX_VALUE;
         dfs(sx, sy, step);
         System.out.println(ans);
         cin.close();

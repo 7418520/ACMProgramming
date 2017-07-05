@@ -8,7 +8,7 @@ import java.util.TreeMap;
 /**
  * Created by WebTuring on 2017-7-3.
  */
-public class A_P1797 {
+public class P1797 {
     public static void main(String[] args) throws IOException {
         Scanner cin = new Scanner(System.in);
         int n = cin.nextInt();
