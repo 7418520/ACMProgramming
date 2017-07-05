@@ -11,11 +11,7 @@ public class P1995 {
         Scanner cin = new Scanner(System.in);
         while (cin.hasNext()) {
             int n = cin.nextInt(), m = cin.nextInt();
-            father = new int[n+1];
-            for (int i=0; i<=n; i++) {
-                father[i] = i;
-            }
-            total = n;
+            init(n);
             for (int i=0; i<m; i++) {
                 union(cin.nextInt(), cin.nextInt());
             }
@@ -35,5 +31,12 @@ public class P1995 {
 
     private static int find(int x) {
         return x == father[x] ? x : find(father[x]);
+    }
+
+    private static void init(int n) {
+        total = n;
+        father = new int[n+1];
+        for (int i=0; i<=n; i++)
+            father[i] = i;
     }
 }
