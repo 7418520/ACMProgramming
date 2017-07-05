@@ -35,7 +35,7 @@ public class P1944 {
 
     private static void dfs(int x, int y, int step) {
         if (x == ex && y == ey) {
-            ans = step;
+            ans = Math.min(ans, step);
             return;
         }
         mp[x][y] = '#';
