@@ -30,7 +30,7 @@ public class P1995 {
     }
 
     private static int find(int x) {
-        return x == father[x] ? x : find(father[x]);
+        return x == father[x] ? x : (father[x] = find(father[x]));
     }
 
     private static void init(int n) {
