@@ -1,34 +1,34 @@
-package lec06;
+package contest05;
 
 import java.util.Scanner;
 
 /**
  * Created by fan on 2017/7/5.
  */
-public class P1995 {
-    static int father[], total;
+public class B {
+    static int father[], cnt;
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
         while (cin.hasNext()) {
-            int n = cin.nextInt(), m = cin.nextInt();
-            init(n);
-            for (int i=0; i<m; i++) {
-                union(cin.nextInt(), cin.nextInt());
+            int N = cin.nextInt(), M = cin.nextInt();
+            if (N == 0 && M == 0) break;
+            init(N);
+            for (int i=0; i<M; i++) {
+                int a = cin.nextInt(), b = cin.nextInt();
+                union(a, b);
             }
-            System.out.println(total);
-            for(int i=1;i<=n;i++)
-                System.out.printf("%d ",father[i]);
+            System.out.println(cnt-1);
         }
         cin.close();
     }
 
-    private static void union(int x, int y) {
-        int p = find(x);
-        int q = find(y);
+    private static void union(int a, int b) {
+        int p = find(a);
+        int q = find(b);
         if (p == q)
             return;
-        father[q] = p;
-        total--;
+        father[p] = q;
+        cnt--;
     }
 
     private static int find(int x) {
@@ -36,7 +36,7 @@ public class P1995 {
     }
 
     private static void init(int n) {
-        total = n;
+        cnt = n;
         father = new int[n+1];
         for (int i=0; i<=n; i++)
             father[i] = i;
