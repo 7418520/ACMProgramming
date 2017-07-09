@@ -2,6 +2,7 @@ package lec10;
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -42,7 +43,12 @@ class KruskalTree {
                 for (int j = 0; j < g.length; j++)
                 if (g[i][j] != 0 && g[i][j] != INF)
                     list.add(new Edge(i, j, g[i][j]));
-        list.sort((Comparator.comparingInt(o -> o.w)));
+        Collections.sort(list, new Comparator<Edge>() {
+            @Override
+            public int compare(Edge o1, Edge o2) {
+                return o1.w-o2.w;
+            }
+        });
 //        for (Edge e : list) {
 //            System.out.println(e.u+" "+e.v+" "+e.w);
 //        }
