@@ -59,7 +59,7 @@ public class DijkstraDemo {
             }
             vis[x] = true;
             for (int j = 1; j <= n; j++) {
-                if (dis[x] < INF && w[x][j] < INF)
+                if (!vis[j] && dis[x] < INF && w[x][j] < INF)
                     dis[j] = Math.min(dis[j], dis[x] + w[x][j]);
             }
         }
