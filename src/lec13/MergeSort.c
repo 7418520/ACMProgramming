@@ -5,7 +5,7 @@
 #include<string.h>
 #define N 10
 
-void merge(int *a, int l, int q, int r)    
+void merge(int *a, int l, int q, int r)
 {
 
     int i, j, k, n1, n2;
