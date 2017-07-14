@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class A {
+public class B {
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
         while (cin.hasNext()) {
