@@ -11,7 +11,7 @@ class BinaryTree {
 
     private BinaryTree left;
     private String data;
-    private BinaryTree right;    
+    private BinaryTree right;
 
     private BinaryTree(String data) {
         this.data = data;
