@@ -50,7 +50,7 @@ public class DijkstraDemo {
         for (int i = 1; i <= n; i++) {
             dis[i] = (i == start) ? 0 : INF;
         }
-        for (int i = 1; i <= n; i++) {//x为未访问过的d[i]存在最小值的那个顶点编号，每次都需要找这个顶点，找n次
+        for (int i = 1; i <= n; i++) {
             int x = 0, min = INF;
             for (int j = 1; j <= n; j++) {
                 if (!vis[j] && dis[j] < min) {
