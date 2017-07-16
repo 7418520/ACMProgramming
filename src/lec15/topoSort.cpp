@@ -17,7 +17,7 @@ bool toposort()
 		for (int j=0; j<g[i].size(); j++)
 			du[g[i][j]]++;
 	int tot = 0;
-	queue<int> Q;
+	priority_queue<int> Q;
 	for (int i=0; i<n; i++)
 		if (!du[i]) Q.push(i);//入度为0的点存入优先队列
 	while (!Q.empty()) {
