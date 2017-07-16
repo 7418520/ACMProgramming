@@ -39,7 +39,6 @@ int main(int argc, char const *argv[])
 {
 	while (~scanf("%d%d", &n, &m))
 	{
-		scanf("%d%d", &n, &m);
 		for(int i=0;i<n;i++)
             g[i].clear();
 		while (m--)
